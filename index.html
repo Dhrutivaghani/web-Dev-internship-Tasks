@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Page</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 align="center">Student Registration Page</h1>
+        <hr>
+    </header>
+
+    <!-- Form Section -->
+    <section>
+        <h2>Student Registration Form</h2>
+
+        <form>
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname" required><br><br>
+
+            <label>Email Address:</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <label>Password:</label><br>
+            <input type="password" name="password" required><br><br>
+
+            <label>Phone Number:</label><br>
+            <input type="tel" name="phone"><br><br>
+
+            <label>Date of Birth:</label><br>
+            <input type="date" name="dob"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+            <br><br>
+
+            <label>Skills:</label><br>
+            <input type="checkbox" name="skills" value="HTML"> HTML
+            <input type="checkbox" name="skills" value="CSS"> CSS
+            <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+            <input type="checkbox" name="skills" value="Python"> Python
+            <br><br>
+
+            <label>City:</label><br>
+            <select>
+                <option>Select City</option>
+                <option>Ahmedabad</option>
+                <option>Surat</option>
+                <option>Rajkot</option>
+                <option>Bhavnagar</option>
+                <option>Vadodara</option>
+            </select>
+            <br><br>
+
+            <label>Message:</label><br>
+            <textarea rows="5" cols="40"></textarea>
+            <br><br>
+
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Table Section -->
+    <section>
+        <h2>Student Details</h2>
+
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>Rahul Patel</td>
+                <td>BCA</td>
+                <td>rahul@gmail.com</td>
+                <td>Ahmedabad</td>
+            </tr>
+            <tr>
+                <td>Priya Shah</td>
+                <td>BSc IT</td>
+                <td>priya@gmail.com</td>
+                <td>Surat</td>
+            </tr>
+            <tr>
+                <td>Amit Kumar</td>
+                <td>BCom</td>
+                <td>amit@gmail.com</td>
+                <td>Rajkot</td>
+            </tr>
+            <tr>
+                <td>Neha Verma</td>
+                <td>MCA</td>
+                <td>neha@gmail.com</td>
+                <td>Bhavnagar</td>
+            </tr>
+            <tr>
+                <td>Karan Singh</td>
+                <td>BBA</td>
+                <td>karan@gmail.com</td>
+                <td>Vadodara</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Media Section -->
+    <section>
+        <h2>Media Section</h2>
+
+        <h3>Image</h3>
+        <img src="https://via.placeholder.com/400x250" alt="Student Image">
+
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+
+        <h3>Video</h3>
+        <video width="400" controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+    </section>
+
+    <hr>
+
+    <!-- Iframe Section -->
+    <section>
+        <h2>Embedded Content</h2>
+
+        <h3>YouTube Video</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube Video"
+            allowfullscreen>
+        </iframe>
+
+        <h3>Google Map</h3>
+        <iframe src="https://www.google.com/maps?q=Rajula,Gujarat&output=embed" width="600" height="450"
+            style="border:0;" allowfullscreen>
+        </iframe>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p align="center">
+            © 2026 Student Registration Portal. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+
+</html>
