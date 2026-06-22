@@ -2,72 +2,119 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #384dd4;
+    background: #FFF9C4;
     color: #333;
-    line-height: 1.6;
 }
 
-header {
-    background: #1e3a8a;
-    color: white;
+/* Hero Section */
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #FFD54F, #FFC107);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 40px;
 }
 
-header p {
-    margin-top: 10px;
+.hero h1 {
+    font-size: 60px;
 }
 
+.hero p {
+    margin: 15px 0;
+}
+
+/* Inline Block */
+.btn {
+    display: inline-block;
+    background: #222;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+/* Sticky Navbar */
 nav {
-    background: #2563eb;
+    position: sticky;
+    top: 0;
+    background: #FBC02D;
     text-align: center;
     padding: 15px;
+    z-index: 1000;
 }
 
 nav a {
-    color: #c91111;
-    text-decoration: none;
+    display: inline-block;
     margin: 0 15px;
+    text-decoration: none;
+    color: #222;
     font-weight: bold;
 }
 
-nav a:hover {
-    color: #ffd700;
-}
-
+/* Block Display */
 .box {
-    background: white;
+    display: block;
+    background: #FFFDE7;
     margin: 20px;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #1e3a8a;
-    margin-bottom: 15px;
+/* Inline Display */
+.skill {
+    display: inline;
+    color: #E65100;
+    font-weight: bold;
+    margin-right: 20px;
 }
 
 .project {
-    background: #e0f2fe;
+    background: #FFF8E1;
     padding: 15px;
     margin-top: 10px;
-    border-left: 5px solid #2563eb;
+    border-left: 5px solid #FF9800;
 }
 
-ul li {
-    margin-left: 20px;
-    padding: 5px;
+/* Overflow Section */
+.overflow-box {
+    height: 200px;
+    overflow: auto;
+    padding: 15px;
+    background: #FFF8E1;
 }
 
+h2 {
+    color: #E65100;
+    margin-bottom: 15px;
+}
+
+/* Footer */
 footer {
-    background: #1e3a8a;
-    color: white;
+    background: #FBC02D;
     text-align: center;
     padding: 15px;
-    margin-top: 20px;
+}
+
+/* Fixed Contact Button */
+.contact-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #FF9800;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-weight: bold;
 }
