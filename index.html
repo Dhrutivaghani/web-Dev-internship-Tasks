@@ -2,86 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta character="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhruti portfolio</title>
+    <title>Dashboard Grid Layout</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="hero">
-        <h1>Dhruti vaghani</h1>
-        <p>Web Developer | student | Designer</p>
-        <a href="#contact" class="btn">contact Me</a>
-    </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skils">Skills</a>
-        <a href="#project">Projects</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">contact</a>
-    </nav>
+    <div class="container">
 
-    <section id="about" class="box">
-        <h2>About Me</h2>
-        <p>
-            Hello I am Dhruti vaghani, a passionate web Developer who enjoys creating attractive and user-friendly
-            websites.
-        </p>
-    </section>
+        <!-- Navbar -->
+        <nav>
+            <div class="logo">◉</div>
 
-    <section id="Skills" class="box">
-        <h2>Skills</h2>
-        <span class="skill">HTML</span>
-        <span class="skill">css</span>
-        <span class="skill">javascript</span>
-        <span class="skill">Figma</span>
-    </section>
+            <ul>
+                <li>Products</li>
+                <li>App</li>
+                <li>About</li>
+                <li>FAQ</li>
+            </ul>
 
-    <section id="Projects" class="box">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>student Registration Page</h3>
-            <p>Designed using HTML and Css.</p>
+            <div class="buttons">
+                <button class="login">LOG IN</button>
+                <button class="signup">SIGN UP</button>
+            </div>
+        </nav>
+
+        <!-- Grid Layout -->
+        <div class="grid">
+
+            <!-- Large Left Card -->
+            <div class="card hero">
+                <small>MORE OFFERS</small>
+
+                <h1>
+                    There is<br>
+                    something else<br>
+                    for you
+                </h1>
+
+                <button class="shop-btn">All Products 🛒</button>
+            </div>
+
+            <!-- Top Right Card -->
+            <div class="card blog">
+                <small>WORLD OF HEARING TECHNOLOGY</small>
+                <h2>View our blog</h2>
+            </div>
+
+            <!-- Bottom Left -->
+            <div class="card about">
+                <small>DISCOVER OUR STORY</small>
+                <h2>About us</h2>
+            </div>
+
+            <!-- Bottom Right -->
+            <div class="card contact">
+                <small>HAVE SOME QUESTIONS?</small>
+                <h2>Contact us</h2>
+            </div>
+
         </div>
 
-        <div class="project">
-            <h3>Fitness website</h3>
-            <p>Modern landing page design.</p>
-        </div>
-    </section>
-
-    <section id="Reviews" class="box">
-        <h2>Customer Reviews</h2>
-
-        <div class="overflow-box">
-            <p>Excellent website design and layout.</p>
-            <p>very responsive and mobile friendly.</p>
-            <p>professional and modern apperance.</p>
-            <p>Easy navigation and attractive colors.</p>
-            <p>Fast loading speed.</p>
-            <p>Great portfolio for internship Projects</p>
-            <p>Creative design and smooth scrolling.</p>
-            <p>outstanding work quality.</p>
-            <p>Beautiful UI and User experience.</p>
-            <p>Highly recommended Developer</p>
-            <p>very attractive yellow theme.</p>
-            <p>Clean code and easy navigation.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="box">
-        <h2>contact Me</h2>
-        <p>Email: dhrurti vaghani@gmail.com</p>
-        <p>phone:8238315676</p>
-    </section>
-
-    <footer>
-        <p>@ 2026 Dhruti vaghani portfolio</p>
-    </footer>
-
-    <a href="#contact" class="contact-btn">Contacts US</a>
+    </div>
 
 </body>
 
