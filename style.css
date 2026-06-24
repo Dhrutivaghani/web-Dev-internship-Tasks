@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
 }
 
 body {
@@ -10,10 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* RED BACKGROUND */
-    background: #d62828;
-
+    background: linear-gradient(135deg, #0f172a, #334155);
     padding: 30px;
 }
 
@@ -25,6 +23,7 @@ body {
     border-radius: 30px;
     padding: 25px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 1s ease;
 }
 
 /* Navbar */
@@ -49,7 +48,30 @@ ul {
 
 li {
     cursor: pointer;
+    position: relative;
 }
+
+li:hover {
+    color: #ff9800;
+    transform: scale(1.1);
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #ff9800;
+    transition: 0.3s ease;
+}
+
+li:hover::after {
+    width: 100%;
+}
+
+/* Buttons */
 
 .buttons {
     display: flex;
@@ -58,17 +80,27 @@ li {
 
 .login {
     border: none;
-    background: #ececec;
+    background: linear-gradient(45deg, #06b6d4, #3b82f6);
+    color: white;
     padding: 10px 20px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .signup {
     border: none;
-    background: #111;
+    background: linear-gradient(45deg, #7c3aed, #ec4899);
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+.login:hover,
+.signup:hover,
+.shop-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 /* Grid */
@@ -80,23 +112,46 @@ li {
     gap: 15px;
 }
 
+/* Cards */
+
 .card {
     border-radius: 25px;
     padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
 }
 
-/* Large Left Card */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    left: 100%;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Hero Card */
 
 .hero {
     grid-row: 1 / span 2;
-
-    /* DARK BLUE */
-    background: #1d3557;
+    background: linear-gradient(135deg, #0f766e, #14b8a6);
     color: white;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    animation: floating 4s ease-in-out infinite;
 }
 
 .hero h1 {
@@ -111,16 +166,15 @@ li {
     border-radius: 15px;
     background: white;
     font-weight: bold;
+    cursor: pointer;
+    animation: pulse 2s infinite;
 }
 
 /* Blog Card */
 
 .blog {
     grid-column: 2 / span 2;
-
-    /* ORANGE */
-    background: #f4a261;
-
+    background: #f59e0b;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -133,10 +187,8 @@ li {
 /* About Card */
 
 .about {
-    /* PURPLE */
-    background: #9b5de5;
+    background: #8b5cf6;
     color: white;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -149,9 +201,8 @@ li {
 /* Contact Card */
 
 .contact {
-    /* TEAL */
-    background: #2ec4b6;
-
+    background: #ec4899;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -159,6 +210,59 @@ li {
 
 .contact h2 {
     font-size: 42px;
+}
+
+/* Images */
+
+img {
+    transition: 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    filter: brightness(120%);
+}
+
+/* Animations */
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* Responsive */
