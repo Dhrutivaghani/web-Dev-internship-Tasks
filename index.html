@@ -4,75 +4,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Registration Form</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Dhruti Vaghani | Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-100 text-gray-800">
 
-    <div class="registration-container">
-        <div class="form-card">
-            <h1>Student Registration Form</h1>
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto flex justify-between items-center p-5">
+            <h1 class="text-2xl font-bold">Dhruti Vaghani</h1>
 
-            <form>
-                <div class="form-grid">
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+                <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+                <li><a href="#skills" class="hover:text-yellow-300">Skills</a></li>
+                <li><a href="#projects" class="hover:text-yellow-300">Projects</a></li>
+                <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-                    <div class="input-box">
-                        <label>First Name</label>
-                        <input type="text" placeholder="Enter First Name">
-                    </div>
+    <!-- Hero Section -->
+    <section id="home"
+        class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
 
-                    <div class="input-box">
-                        <label>Last Name</label>
-                        <input type="text" placeholder="Enter Last Name">
-                    </div>
+        <div class="text-center">
 
-                    <div class="input-box">
-                        <label>Email</label>
-                        <input type="email" placeholder="Enter Email">
-                    </div>
+            <h2 class="text-5xl font-bold mb-4">
+                Hello, I'm <span class="text-yellow-300">Dhruti Vaghani</span>
+            </h2>
 
-                    <div class="input-box">
-                        <label>Mobile Number</label>
-                        <input type="tel" placeholder="Enter Mobile Number">
-                    </div>
+            <p class="text-xl mb-6">
+                Web Developer | HTML | Tailwind CSS | JavaScript
+            </p>
 
-                    <div class="input-box">
-                        <label>Date of Birth</label>
-                        <input type="date">
-                    </div>
+            <a href="#projects" class="bg-yellow-400 text-black px-6 py-3 rounded-lg hover:bg-yellow-300 font-semibold">
+                View My Work
+            </a>
 
-                    <div class="input-box">
-                        <label>Course</label>
-                        <select>
-                            <option>Select Course</option>
-                            <option>BCA</option>
-                            <option>BBA</option>
-                            <option>B.Tech</option>
-                            <option>B.Com</option>
-                        </select>
-                    </div>
+        </div>
 
-                    <div class="input-box full-width">
-                        <label>Address</label>
-                        <textarea rows="4" placeholder="Enter Address"></textarea>
-                    </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16 bg-white">
+
+        <div class="container mx-auto px-6">
+
+            <h2 class="text-4xl font-bold text-center mb-8">About Me</h2>
+
+            <p class="text-center max-w-3xl mx-auto text-lg">
+                I am Dhruti Vaghani, a passionate web developer currently learning
+                HTML, Tailwind CSS, JavaScript and modern web development.
+                I enjoy creating beautiful and responsive websites.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-16 bg-gray-100">
+
+        <div class="container mx-auto">
+
+            <h2 class="text-4xl font-bold text-center mb-10">
+                My Skills
+            </h2>
+
+            <div class="grid md:grid-cols-4 gap-6 px-8">
+
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <h3 class="text-xl font-bold">HTML</h3>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <h3 class="text-xl font-bold">CSS</h3>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <h3 class="text-xl font-bold">Tailwind CSS</h3>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                    <h3 class="text-xl font-bold">JavaScript</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+
+    <section id="projects" class="py-16 bg-white">
+
+        <div class="container mx-auto">
+
+            <h2 class="text-4xl font-bold text-center mb-10">
+                Projects
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8 px-8">
+
+                <div class="bg-gray-100 rounded-lg shadow-lg p-6">
+
+                    <h3 class="text-2xl font-bold mb-3">
+                        Student Registration Form
+                    </h3>
+
+                    <p>
+                        A responsive registration form created using HTML and CSS.
+                    </p>
 
                 </div>
 
-                <div class="gender">
-                    <label>Gender:</label>
-                    <input type="radio" name="gender"> Male
-                    <input type="radio" name="gender"> Female
-                    <input type="radio" name="gender"> Other
+                <div class="bg-gray-100 rounded-lg shadow-lg p-6">
+
+                    <h3 class="text-2xl font-bold mb-3">
+                        Login Page
+                    </h3>
+
+                    <p>
+                        Modern login page with responsive design.
+                    </p>
+
                 </div>
 
-                <button type="submit">Submit Registration</button>
+                <div class="bg-gray-100 rounded-lg shadow-lg p-6">
+
+                    <h3 class="text-2xl font-bold mb-3">
+                        Portfolio Website
+                    </h3>
+
+                    <p>
+                        Personal portfolio built using Tailwind CSS.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact" class="py-16 bg-blue-600 text-white">
+
+        <div class="container mx-auto px-6">
+
+            <h2 class="text-4xl font-bold text-center mb-8">
+                Contact Me
+            </h2>
+
+            <form class="max-w-xl mx-auto bg-white text-black rounded-lg p-8 shadow-lg">
+
+                <input type="text" placeholder="Your Name" class="w-full border p-3 rounded mb-4">
+
+                <input type="email" placeholder="Your Email" class="w-full border p-3 rounded mb-4">
+
+                <textarea rows="5" placeholder="Your Message" class="w-full border p-3 rounded mb-4"></textarea>
+
+                <button class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
+                    Send Message
+                </button>
 
             </form>
+
         </div>
-    </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-gray-900 text-white text-center p-5">
+
+        <p>
+            © 2026 Dhruti Vaghani | All Rights Reserved
+        </p>
+
+    </footer>
 
 </body>
 
-</html
+</html>
